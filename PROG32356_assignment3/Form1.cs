@@ -13,5 +13,20 @@ namespace PROG32356_assignment3 {
         public Form1() {
             InitializeComponent();
         }
+
+        private void weightOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tempOutput_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timeOutput_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
