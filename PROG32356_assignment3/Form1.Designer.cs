@@ -154,6 +154,7 @@
             this.weightConvertBtn.TabIndex = 14;
             this.weightConvertBtn.Text = "Convert";
             this.weightConvertBtn.UseVisualStyleBackColor = true;
+            this.weightConvertBtn.Click += new System.EventHandler(this.WeightConvertBtn_Click);
             // 
             // weightOutput
             // 
@@ -163,7 +164,6 @@
             this.weightOutput.Name = "weightOutput";
             this.weightOutput.Size = new System.Drawing.Size(0, 20);
             this.weightOutput.TabIndex = 10;
-            this.weightOutput.Click += new System.EventHandler(this.WeightOutput_Click);
             // 
             // weightTextBox
             // 
@@ -226,6 +226,7 @@
             this.tempConvertBtn.TabIndex = 15;
             this.tempConvertBtn.Text = "Convert";
             this.tempConvertBtn.UseVisualStyleBackColor = true;
+            this.tempConvertBtn.Click += new System.EventHandler(this.TempConvertBtn_Click);
             // 
             // tempOutput
             // 
@@ -236,7 +237,6 @@
             this.tempOutput.Size = new System.Drawing.Size(0, 20);
             this.tempOutput.TabIndex = 11;
             this.tempOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tempOutput.Click += new System.EventHandler(this.TempOutput_Click);
             // 
             // tempTextBox
             // 
@@ -299,6 +299,7 @@
             this.timeConvertBtn.TabIndex = 16;
             this.timeConvertBtn.Text = "Convert";
             this.timeConvertBtn.UseVisualStyleBackColor = true;
+            this.timeConvertBtn.Click += new System.EventHandler(this.TimeConvertBtn_Click);
             // 
             // timeOutput
             // 
