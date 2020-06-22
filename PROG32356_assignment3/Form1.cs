@@ -8,79 +8,107 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PROG32356_assignment3 {
-    public partial class Form1 : Form {
+namespace PROG32356_assignment3
+{
+    public partial class Form1 : Form
+    {
+        private readonly string invalidInput = "Enter a valid number.";
+        private readonly string emptyInput = "Enter a number to convert.";
 
-        private string errorMessage = "Enter a valid number.";
         private string output = string.Empty;
-        public Form1() {
+        public Form1()
+        {
             InitializeComponent();
+
             footBtn.Checked = true;
             poundBtn.Checked = true;
             celsiusBtn.Checked = true;
             minBtn.Checked = true;
         }
 
-        private void WeightOutput_Click(object sender, EventArgs e)
-        {
-            if (double.TryParse(weightTextBox.Text, out double number))
-            {
-                var weight = new Weight();
-                output = poundBtn.Checked ? weight.PoundToKilogram(number).ToString() + " kg" : weight.KilogramToPound(number).ToString() + " lb";
-            }
-            else
-            {
-                output = errorMessage;
-            }
-
-            lengthOutput.Text = output;
-        }
-
-        private void TempOutput_Click(object sender, EventArgs e)
-        {
-
-            if (double.TryParse(lengthTextBox.Text, out double number))
-            {
-                var temperature = new Temperature();
-                output = celsiusBtn.Checked ? temperature.CelsiusToFahrenheit(number).ToString() + " F" : temperature.FahrenheitToCelsius(number).ToString() + " C";
-            }
-            else
-            {
-                output = errorMessage;
-            }
-
-            lengthOutput.Text = output;
-        }
-
-        private void TimeOutput_Click(object sender, EventArgs e)
-        {
-            if (double.TryParse(lengthTextBox.Text, out double number))
-            {
-                var time = new Time();
-                output = minBtn.Checked ? time.MinuteToHour(number).ToString() + " hours" : time.HourToMinute(number).ToString() + " min";
-            }
-            else
-            {
-                output = errorMessage;
-            }
-
-            lengthOutput.Text = output;
-        }
-
         private void LengthConvertBtn_Click(object sender, EventArgs e)
         {
-            if (double.TryParse(lengthTextBox.Text, out double number))
+            if (!string.IsNullOrEmpty(lengthTextBox.Text))
             {
-                var length = new Length(); 
-                output = footBtn.Checked ? string.Format("{0:N2}", length.FootToMeter(number) + " m") : string.Format("{0:N2}", length.MeterToFoot(number) + " ft");
+
+                if (double.TryParse(lengthTextBox.Text, out double number))
+                {
+                    var length = new Length();
+                    output = footBtn.Checked ? string.Format("{0:N2}", length.FootToMeter(number) + " m") : string.Format("{0:N2}", length.MeterToFoot(number) + " ft");
+                }
+                else
+                {
+                    output = invalidInput;
+                }
             }
             else
             {
-                output = errorMessage;
+                output = emptyInput;
             }
-
             lengthOutput.Text = output;
         }
 
+        private void WeightConvertBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(weightTextBox.Text))
+            {
+                if (double.TryParse(weightTextBox.Text, out double number))
+                {
+                    var weight = new Weight();
+                    output = poundBtn.Checked ? weight.PoundToKilogram(number).ToString() + " kg" : weight.KilogramToPound(number).ToString() + " lb";
+                }
+                else
+                {
+                    output = invalidInput;
+                }
+            }
+            else
+            {
+                output = emptyInput;
+            }
+            weightOutput.Text = output;
+        }
+
+        private void TempConvertBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(tempTextBox.Text))
+            {
+                if (double.TryParse(tempTextBox.Text, out double number))
+                {
+                    var temperature = new Temperature();
+                    output = celsiusBtn.Checked ? temperature.CelsiusToFahrenheit(number).ToString() + " F" : temperature.FahrenheitToCelsius(number).ToString() + " C";
+                }
+                else
+                {
+                    output = invalidInput;
+                }
+            }
+            else
+            {
+                output = emptyInput;
+            }
+            tempOutput.Text = output;
+        }
+
+        private void TimeConvertBtn_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(timeTextBox.Text))
+            {
+                if (double.TryParse(timeTextBox.Text, out double number) && number > 0)
+                {
+                    var time = new Time();
+                    output = minBtn.Checked ? time.MinuteToHour(number).ToString() + " hours" : time.HourToMinute(number).ToString() + " min";
+                }
+                else
+                {
+                    output = invalidInput;
+                }
+            }
+            else
+            {
+                output = emptyInput;
+            }
+            timeOutput.Text = output;
+        }
     }
 }

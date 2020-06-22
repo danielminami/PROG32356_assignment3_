@@ -3,10 +3,10 @@
 public class Temperature {
 
     public double CelsiusToFahrenheit(double value) {
-        return (value * 9 / 5) + 32;
+        return Math.Round(((value * 9 / 5) + 32), 2);
     }
 
     public double FahrenheitToCelsius(double value) {
-        return (value - 32) * 5 / 9;
+        return Math.Round(((value - 32) * 5 / 9), 2);
     }
 }
