@@ -3,10 +3,10 @@
 public class Time {
 	
     public double MinuteToHour(double value) {
-        return value / 60;
+        return Math.Round(value / 60, 2);
     }
 
     public double HourToMinute(double value) {
-        return value * 60;
+        return Math.Round(value * 60, 2);
     }
 }
