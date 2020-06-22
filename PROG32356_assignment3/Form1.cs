@@ -71,8 +71,8 @@ namespace PROG32356_assignment3 {
         {
             if (double.TryParse(lengthTextBox.Text, out double number))
             {
-                var length = new Length();
-                output = footBtn.Checked ? length.FootToMeter(number).ToString() + " m" : length.MeterToFoot(number).ToString() + " ft";
+                var length = new Length(); 
+                output = footBtn.Checked ? string.Format("{0:N2}", length.FootToMeter(number) + " m") : string.Format("{0:N2}", length.MeterToFoot(number) + " ft");
             }
             else
             {
