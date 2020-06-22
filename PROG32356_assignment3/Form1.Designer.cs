@@ -63,46 +63,53 @@
             this.lengthGroupBox.Controls.Add(this.meterBtn);
             this.lengthGroupBox.Controls.Add(this.footBtn);
             this.lengthGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lengthGroupBox.Location = new System.Drawing.Point(12, 10);
+            this.lengthGroupBox.Location = new System.Drawing.Point(16, 12);
+            this.lengthGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.lengthGroupBox.Name = "lengthGroupBox";
-            this.lengthGroupBox.Size = new System.Drawing.Size(200, 408);
+            this.lengthGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.lengthGroupBox.Size = new System.Drawing.Size(267, 502);
             this.lengthGroupBox.TabIndex = 0;
             this.lengthGroupBox.TabStop = false;
             this.lengthGroupBox.Text = "LENGTH";
             // 
             // lengthConvertBtn
             // 
-            this.lengthConvertBtn.Location = new System.Drawing.Point(61, 210);
+            this.lengthConvertBtn.Location = new System.Drawing.Point(81, 258);
+            this.lengthConvertBtn.Margin = new System.Windows.Forms.Padding(4);
             this.lengthConvertBtn.Name = "lengthConvertBtn";
-            this.lengthConvertBtn.Size = new System.Drawing.Size(75, 23);
+            this.lengthConvertBtn.Size = new System.Drawing.Size(100, 28);
             this.lengthConvertBtn.TabIndex = 13;
             this.lengthConvertBtn.Text = "Convert";
             this.lengthConvertBtn.UseVisualStyleBackColor = true;
+            this.lengthConvertBtn.Click += new System.EventHandler(this.LengthConvertBtn_Click);
             // 
             // lengthOutput
             // 
             this.lengthOutput.AutoSize = true;
-            this.lengthOutput.Location = new System.Drawing.Point(15, 299);
+            this.lengthOutput.Location = new System.Drawing.Point(77, 368);
+            this.lengthOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthOutput.Name = "lengthOutput";
-            this.lengthOutput.Size = new System.Drawing.Size(172, 17);
+            this.lengthOutput.Size = new System.Drawing.Size(0, 20);
             this.lengthOutput.TabIndex = 9;
-            this.lengthOutput.Text = "\"the output goes here\"";
+            this.lengthOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lengthTextBox
             // 
             this.lengthTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.lengthTextBox.Location = new System.Drawing.Point(23, 158);
+            this.lengthTextBox.Location = new System.Drawing.Point(31, 194);
+            this.lengthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.lengthTextBox.Name = "lengthTextBox";
-            this.lengthTextBox.Size = new System.Drawing.Size(156, 23);
+            this.lengthTextBox.Size = new System.Drawing.Size(207, 26);
             this.lengthTextBox.TabIndex = 8;
-            this.lengthTextBox.Text = "Enter numbers here";
+            this.lengthTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // meterBtn
             // 
             this.meterBtn.AutoSize = true;
-            this.meterBtn.Location = new System.Drawing.Point(23, 82);
+            this.meterBtn.Location = new System.Drawing.Point(31, 101);
+            this.meterBtn.Margin = new System.Windows.Forms.Padding(4);
             this.meterBtn.Name = "meterBtn";
-            this.meterBtn.Size = new System.Drawing.Size(79, 21);
+            this.meterBtn.Size = new System.Drawing.Size(93, 24);
             this.meterBtn.TabIndex = 3;
             this.meterBtn.TabStop = true;
             this.meterBtn.Text = "METER";
@@ -111,9 +118,10 @@
             // footBtn
             // 
             this.footBtn.AutoSize = true;
-            this.footBtn.Location = new System.Drawing.Point(23, 52);
+            this.footBtn.Location = new System.Drawing.Point(31, 64);
+            this.footBtn.Margin = new System.Windows.Forms.Padding(4);
             this.footBtn.Name = "footBtn";
-            this.footBtn.Size = new System.Drawing.Size(69, 21);
+            this.footBtn.Size = new System.Drawing.Size(80, 24);
             this.footBtn.TabIndex = 2;
             this.footBtn.TabStop = true;
             this.footBtn.Text = "FOOT";
@@ -128,18 +136,21 @@
             this.weightGroupBox.Controls.Add(this.kiloBtn);
             this.weightGroupBox.Controls.Add(this.poundBtn);
             this.weightGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.weightGroupBox.Location = new System.Drawing.Point(218, 10);
+            this.weightGroupBox.Location = new System.Drawing.Point(291, 12);
+            this.weightGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.weightGroupBox.Name = "weightGroupBox";
-            this.weightGroupBox.Size = new System.Drawing.Size(200, 408);
+            this.weightGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.weightGroupBox.Size = new System.Drawing.Size(267, 502);
             this.weightGroupBox.TabIndex = 1;
             this.weightGroupBox.TabStop = false;
             this.weightGroupBox.Text = "WEIGHT";
             // 
             // weightConvertBtn
             // 
-            this.weightConvertBtn.Location = new System.Drawing.Point(65, 210);
+            this.weightConvertBtn.Location = new System.Drawing.Point(87, 258);
+            this.weightConvertBtn.Margin = new System.Windows.Forms.Padding(4);
             this.weightConvertBtn.Name = "weightConvertBtn";
-            this.weightConvertBtn.Size = new System.Drawing.Size(75, 23);
+            this.weightConvertBtn.Size = new System.Drawing.Size(100, 28);
             this.weightConvertBtn.TabIndex = 14;
             this.weightConvertBtn.Text = "Convert";
             this.weightConvertBtn.UseVisualStyleBackColor = true;
@@ -147,28 +158,30 @@
             // weightOutput
             // 
             this.weightOutput.AutoSize = true;
-            this.weightOutput.Location = new System.Drawing.Point(13, 299);
+            this.weightOutput.Location = new System.Drawing.Point(125, 368);
+            this.weightOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.weightOutput.Name = "weightOutput";
-            this.weightOutput.Size = new System.Drawing.Size(172, 17);
+            this.weightOutput.Size = new System.Drawing.Size(0, 20);
             this.weightOutput.TabIndex = 10;
-            this.weightOutput.Text = "\"the output goes here\"";
-            this.weightOutput.Click += new System.EventHandler(this.weightOutput_Click);
+            this.weightOutput.Click += new System.EventHandler(this.WeightOutput_Click);
             // 
             // weightTextBox
             // 
             this.weightTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.weightTextBox.Location = new System.Drawing.Point(22, 158);
+            this.weightTextBox.Location = new System.Drawing.Point(29, 194);
+            this.weightTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.weightTextBox.Name = "weightTextBox";
-            this.weightTextBox.Size = new System.Drawing.Size(158, 23);
+            this.weightTextBox.Size = new System.Drawing.Size(209, 26);
             this.weightTextBox.TabIndex = 9;
-            this.weightTextBox.Text = "Enter numbers here";
+            this.weightTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // kiloBtn
             // 
             this.kiloBtn.AutoSize = true;
-            this.kiloBtn.Location = new System.Drawing.Point(22, 82);
+            this.kiloBtn.Location = new System.Drawing.Point(29, 101);
+            this.kiloBtn.Margin = new System.Windows.Forms.Padding(4);
             this.kiloBtn.Name = "kiloBtn";
-            this.kiloBtn.Size = new System.Drawing.Size(106, 21);
+            this.kiloBtn.Size = new System.Drawing.Size(126, 24);
             this.kiloBtn.TabIndex = 4;
             this.kiloBtn.TabStop = true;
             this.kiloBtn.Text = "KILOGRAM";
@@ -177,9 +190,10 @@
             // poundBtn
             // 
             this.poundBtn.AutoSize = true;
-            this.poundBtn.Location = new System.Drawing.Point(22, 52);
+            this.poundBtn.Location = new System.Drawing.Point(29, 64);
+            this.poundBtn.Margin = new System.Windows.Forms.Padding(4);
             this.poundBtn.Name = "poundBtn";
-            this.poundBtn.Size = new System.Drawing.Size(81, 21);
+            this.poundBtn.Size = new System.Drawing.Size(96, 24);
             this.poundBtn.TabIndex = 5;
             this.poundBtn.TabStop = true;
             this.poundBtn.Text = "POUND";
@@ -194,18 +208,21 @@
             this.tempGroupBox.Controls.Add(this.fahrenBtn);
             this.tempGroupBox.Controls.Add(this.celsiusBtn);
             this.tempGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tempGroupBox.Location = new System.Drawing.Point(424, 10);
+            this.tempGroupBox.Location = new System.Drawing.Point(565, 12);
+            this.tempGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.tempGroupBox.Name = "tempGroupBox";
-            this.tempGroupBox.Size = new System.Drawing.Size(200, 408);
+            this.tempGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.tempGroupBox.Size = new System.Drawing.Size(267, 502);
             this.tempGroupBox.TabIndex = 1;
             this.tempGroupBox.TabStop = false;
             this.tempGroupBox.Text = "TEMPERATURE";
             // 
             // tempConvertBtn
             // 
-            this.tempConvertBtn.Location = new System.Drawing.Point(62, 210);
+            this.tempConvertBtn.Location = new System.Drawing.Point(83, 258);
+            this.tempConvertBtn.Margin = new System.Windows.Forms.Padding(4);
             this.tempConvertBtn.Name = "tempConvertBtn";
-            this.tempConvertBtn.Size = new System.Drawing.Size(75, 23);
+            this.tempConvertBtn.Size = new System.Drawing.Size(100, 28);
             this.tempConvertBtn.TabIndex = 15;
             this.tempConvertBtn.Text = "Convert";
             this.tempConvertBtn.UseVisualStyleBackColor = true;
@@ -213,28 +230,31 @@
             // tempOutput
             // 
             this.tempOutput.AutoSize = true;
-            this.tempOutput.Location = new System.Drawing.Point(14, 299);
+            this.tempOutput.Location = new System.Drawing.Point(143, 368);
+            this.tempOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempOutput.Name = "tempOutput";
-            this.tempOutput.Size = new System.Drawing.Size(172, 17);
+            this.tempOutput.Size = new System.Drawing.Size(0, 20);
             this.tempOutput.TabIndex = 11;
-            this.tempOutput.Text = "\"the output goes here\"";
-            this.tempOutput.Click += new System.EventHandler(this.tempOutput_Click);
+            this.tempOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.tempOutput.Click += new System.EventHandler(this.TempOutput_Click);
             // 
             // tempTextBox
             // 
             this.tempTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.tempTextBox.Location = new System.Drawing.Point(26, 158);
+            this.tempTextBox.Location = new System.Drawing.Point(35, 194);
+            this.tempTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.tempTextBox.Name = "tempTextBox";
-            this.tempTextBox.Size = new System.Drawing.Size(157, 23);
+            this.tempTextBox.Size = new System.Drawing.Size(208, 26);
             this.tempTextBox.TabIndex = 10;
-            this.tempTextBox.Text = "Enter numbers here";
+            this.tempTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // fahrenBtn
             // 
             this.fahrenBtn.AutoSize = true;
-            this.fahrenBtn.Location = new System.Drawing.Point(26, 82);
+            this.fahrenBtn.Location = new System.Drawing.Point(35, 101);
+            this.fahrenBtn.Margin = new System.Windows.Forms.Padding(4);
             this.fahrenBtn.Name = "fahrenBtn";
-            this.fahrenBtn.Size = new System.Drawing.Size(123, 21);
+            this.fahrenBtn.Size = new System.Drawing.Size(147, 24);
             this.fahrenBtn.TabIndex = 6;
             this.fahrenBtn.TabStop = true;
             this.fahrenBtn.Text = "FAHRENHEIT";
@@ -243,9 +263,10 @@
             // celsiusBtn
             // 
             this.celsiusBtn.AutoSize = true;
-            this.celsiusBtn.Location = new System.Drawing.Point(26, 52);
+            this.celsiusBtn.Location = new System.Drawing.Point(35, 64);
+            this.celsiusBtn.Margin = new System.Windows.Forms.Padding(4);
             this.celsiusBtn.Name = "celsiusBtn";
-            this.celsiusBtn.Size = new System.Drawing.Size(90, 21);
+            this.celsiusBtn.Size = new System.Drawing.Size(108, 24);
             this.celsiusBtn.TabIndex = 7;
             this.celsiusBtn.TabStop = true;
             this.celsiusBtn.Text = "CELSIUS";
@@ -260,18 +281,21 @@
             this.timeGroupBox.Controls.Add(this.minBtn);
             this.timeGroupBox.Controls.Add(this.hourBtn);
             this.timeGroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timeGroupBox.Location = new System.Drawing.Point(630, 10);
+            this.timeGroupBox.Location = new System.Drawing.Point(840, 12);
+            this.timeGroupBox.Margin = new System.Windows.Forms.Padding(4);
             this.timeGroupBox.Name = "timeGroupBox";
-            this.timeGroupBox.Size = new System.Drawing.Size(200, 408);
+            this.timeGroupBox.Padding = new System.Windows.Forms.Padding(4);
+            this.timeGroupBox.Size = new System.Drawing.Size(267, 502);
             this.timeGroupBox.TabIndex = 1;
             this.timeGroupBox.TabStop = false;
             this.timeGroupBox.Text = "TIME";
             // 
             // timeConvertBtn
             // 
-            this.timeConvertBtn.Location = new System.Drawing.Point(72, 210);
+            this.timeConvertBtn.Location = new System.Drawing.Point(96, 258);
+            this.timeConvertBtn.Margin = new System.Windows.Forms.Padding(4);
             this.timeConvertBtn.Name = "timeConvertBtn";
-            this.timeConvertBtn.Size = new System.Drawing.Size(75, 23);
+            this.timeConvertBtn.Size = new System.Drawing.Size(100, 28);
             this.timeConvertBtn.TabIndex = 16;
             this.timeConvertBtn.Text = "Convert";
             this.timeConvertBtn.UseVisualStyleBackColor = true;
@@ -279,28 +303,31 @@
             // timeOutput
             // 
             this.timeOutput.AutoSize = true;
-            this.timeOutput.Location = new System.Drawing.Point(17, 299);
+            this.timeOutput.Location = new System.Drawing.Point(132, 368);
+            this.timeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeOutput.Name = "timeOutput";
-            this.timeOutput.Size = new System.Drawing.Size(172, 17);
+            this.timeOutput.Size = new System.Drawing.Size(0, 20);
             this.timeOutput.TabIndex = 12;
-            this.timeOutput.Text = "\"the output goes here\"";
-            this.timeOutput.Click += new System.EventHandler(this.timeOutput_Click);
+            this.timeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.timeOutput.Click += new System.EventHandler(this.TimeOutput_Click);
             // 
             // timeTextBox
             // 
             this.timeTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.timeTextBox.Location = new System.Drawing.Point(25, 158);
+            this.timeTextBox.Location = new System.Drawing.Point(33, 194);
+            this.timeTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.timeTextBox.Name = "timeTextBox";
-            this.timeTextBox.Size = new System.Drawing.Size(159, 23);
+            this.timeTextBox.Size = new System.Drawing.Size(211, 26);
             this.timeTextBox.TabIndex = 11;
-            this.timeTextBox.Text = "Enter numbers here";
+            this.timeTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // minBtn
             // 
             this.minBtn.AutoSize = true;
-            this.minBtn.Location = new System.Drawing.Point(25, 52);
+            this.minBtn.Location = new System.Drawing.Point(33, 64);
+            this.minBtn.Margin = new System.Windows.Forms.Padding(4);
             this.minBtn.Name = "minBtn";
-            this.minBtn.Size = new System.Drawing.Size(84, 21);
+            this.minBtn.Size = new System.Drawing.Size(99, 24);
             this.minBtn.TabIndex = 8;
             this.minBtn.TabStop = true;
             this.minBtn.Text = "MINUTE";
@@ -309,9 +336,10 @@
             // hourBtn
             // 
             this.hourBtn.AutoSize = true;
-            this.hourBtn.Location = new System.Drawing.Point(25, 82);
+            this.hourBtn.Location = new System.Drawing.Point(33, 101);
+            this.hourBtn.Margin = new System.Windows.Forms.Padding(4);
             this.hourBtn.Name = "hourBtn";
-            this.hourBtn.Size = new System.Drawing.Size(71, 21);
+            this.hourBtn.Size = new System.Drawing.Size(84, 24);
             this.hourBtn.TabIndex = 9;
             this.hourBtn.TabStop = true;
             this.hourBtn.Text = "HOUR";
@@ -319,15 +347,16 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(842, 428);
+            this.ClientSize = new System.Drawing.Size(1123, 527);
             this.Controls.Add(this.timeGroupBox);
             this.Controls.Add(this.tempGroupBox);
             this.Controls.Add(this.weightGroupBox);
             this.Controls.Add(this.lengthGroupBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = " Converter";
             this.lengthGroupBox.ResumeLayout(false);
