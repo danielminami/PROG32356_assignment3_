@@ -310,7 +310,6 @@
             this.timeOutput.Size = new System.Drawing.Size(0, 20);
             this.timeOutput.TabIndex = 12;
             this.timeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.timeOutput.Click += new System.EventHandler(this.TimeOutput_Click);
             // 
             // timeTextBox
             // 

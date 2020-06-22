@@ -65,7 +65,7 @@ namespace PROG32356_assignment3
             {
                 output = emptyInput;
             }
-            lengthOutput.Text = output;
+            weightOutput.Text = output;
         }
 
         private void TempConvertBtn_Click(object sender, EventArgs e)
@@ -86,7 +86,7 @@ namespace PROG32356_assignment3
             {
                 output = emptyInput;
             }
-            lengthOutput.Text = output;
+            tempOutput.Text = output;
         }
 
         private void TimeConvertBtn_Click(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace PROG32356_assignment3
             {
                 output = emptyInput;
             }
-            lengthOutput.Text = output;
+            timeOutput.Text = output;
         }
     }
 }
