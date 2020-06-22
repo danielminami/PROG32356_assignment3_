@@ -86,7 +86,7 @@
             // lengthOutput
             // 
             this.lengthOutput.AutoSize = true;
-            this.lengthOutput.Location = new System.Drawing.Point(77, 368);
+            this.lengthOutput.Location = new System.Drawing.Point(27, 368);
             this.lengthOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthOutput.Name = "lengthOutput";
             this.lengthOutput.Size = new System.Drawing.Size(0, 20);
@@ -159,7 +159,7 @@
             // weightOutput
             // 
             this.weightOutput.AutoSize = true;
-            this.weightOutput.Location = new System.Drawing.Point(125, 368);
+            this.weightOutput.Location = new System.Drawing.Point(25, 348);
             this.weightOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.weightOutput.Name = "weightOutput";
             this.weightOutput.Size = new System.Drawing.Size(0, 20);
@@ -231,7 +231,7 @@
             // tempOutput
             // 
             this.tempOutput.AutoSize = true;
-            this.tempOutput.Location = new System.Drawing.Point(143, 368);
+            this.tempOutput.Location = new System.Drawing.Point(31, 368);
             this.tempOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempOutput.Name = "tempOutput";
             this.tempOutput.Size = new System.Drawing.Size(0, 20);
@@ -304,7 +304,7 @@
             // timeOutput
             // 
             this.timeOutput.AutoSize = true;
-            this.timeOutput.Location = new System.Drawing.Point(132, 368);
+            this.timeOutput.Location = new System.Drawing.Point(29, 368);
             this.timeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeOutput.Name = "timeOutput";
             this.timeOutput.Size = new System.Drawing.Size(0, 20);

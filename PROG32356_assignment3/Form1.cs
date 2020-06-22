@@ -14,6 +14,7 @@ namespace PROG32356_assignment3
     {
         private readonly string invalidInput = "Enter a valid number.";
         private readonly string emptyInput = "Enter a number to convert.";
+        private readonly string negativeTime = "Can not convert negative times.";
         private string output = string.Empty;
         public Form1()
         {
