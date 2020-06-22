@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace PROG32356_assignment3
@@ -34,7 +27,7 @@ namespace PROG32356_assignment3
                 if (double.TryParse(lengthTextBox.Text, out double number))
                 {
                     var length = new Length();
-                    output = footBtn.Checked ? string.Format("{0:N2}", length.FootToMeter(number) + " m") : string.Format("{0:N2}", length.MeterToFoot(number) + " ft");
+                    output = footBtn.Checked ? length.FootToMeter(number) + " m": length.MeterToFoot(number) + " ft";
                 }
                 else
                 {
@@ -55,7 +48,7 @@ namespace PROG32356_assignment3
                 if (double.TryParse(weightTextBox.Text, out double number))
                 {
                     var weight = new Weight();
-                    output = poundBtn.Checked ? weight.PoundToKilogram(number).ToString() + " kg" : weight.KilogramToPound(number).ToString() + " lb";
+                    output = poundBtn.Checked ? weight.PoundToKilogram(number) + " kg": weight.KilogramToPound(number) + " lb";
                 }
                 else
                 {
@@ -76,7 +69,7 @@ namespace PROG32356_assignment3
                 if (double.TryParse(tempTextBox.Text, out double number))
                 {
                     var temperature = new Temperature();
-                    output = celsiusBtn.Checked ? temperature.CelsiusToFahrenheit(number).ToString() + " F" : temperature.FahrenheitToCelsius(number).ToString() + " C";
+                    output = celsiusBtn.Checked ? temperature.CelsiusToFahrenheit(number) + " F": temperature.FahrenheitToCelsius(number) + " C";
                 }
                 else
                 {
@@ -97,7 +90,7 @@ namespace PROG32356_assignment3
                 if (double.TryParse(timeTextBox.Text, out double number) && number > 0)
                 {
                     var time = new Time();
-                    output = minBtn.Checked ? time.MinuteToHour(number).ToString() + " hours" : time.HourToMinute(number).ToString() + " min";
+                    output = minBtn.Checked ? time.MinuteToHour(number) + " hours": time.HourToMinute(number) + " min";
                 }
                 else
                 {

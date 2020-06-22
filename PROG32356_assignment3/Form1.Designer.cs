@@ -1,4 +1,4 @@
-﻿namespace PROG32356_assignment3 {
+namespace PROG32356_assignment3 {
     partial class Form1 {
         /// <summary>
         /// Required designer variable.
@@ -89,8 +89,9 @@
             this.lengthOutput.Location = new System.Drawing.Point(27, 368);
             this.lengthOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthOutput.Name = "lengthOutput";
-            this.lengthOutput.Size = new System.Drawing.Size(0, 20);
+            this.lengthOutput.Size = new System.Drawing.Size(57, 20);
             this.lengthOutput.TabIndex = 9;
+            this.lengthOutput.Text = "result";
             this.lengthOutput.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lengthTextBox
@@ -98,6 +99,7 @@
             this.lengthTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.lengthTextBox.Location = new System.Drawing.Point(31, 194);
             this.lengthTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.lengthTextBox.MaxLength = 10;
             this.lengthTextBox.Name = "lengthTextBox";
             this.lengthTextBox.Size = new System.Drawing.Size(207, 26);
             this.lengthTextBox.TabIndex = 8;
@@ -159,17 +161,19 @@
             // weightOutput
             // 
             this.weightOutput.AutoSize = true;
-            this.weightOutput.Location = new System.Drawing.Point(25, 348);
+            this.weightOutput.Location = new System.Drawing.Point(25, 368);
             this.weightOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.weightOutput.Name = "weightOutput";
-            this.weightOutput.Size = new System.Drawing.Size(0, 20);
+            this.weightOutput.Size = new System.Drawing.Size(57, 20);
             this.weightOutput.TabIndex = 10;
+            this.weightOutput.Text = "result";
             // 
             // weightTextBox
             // 
             this.weightTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.weightTextBox.Location = new System.Drawing.Point(29, 194);
             this.weightTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.weightTextBox.MaxLength = 10;
             this.weightTextBox.Name = "weightTextBox";
             this.weightTextBox.Size = new System.Drawing.Size(209, 26);
             this.weightTextBox.TabIndex = 9;
@@ -234,8 +238,9 @@
             this.tempOutput.Location = new System.Drawing.Point(31, 368);
             this.tempOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempOutput.Name = "tempOutput";
-            this.tempOutput.Size = new System.Drawing.Size(0, 20);
+            this.tempOutput.Size = new System.Drawing.Size(57, 20);
             this.tempOutput.TabIndex = 11;
+            this.tempOutput.Text = "result";
             this.tempOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tempTextBox
@@ -243,6 +248,7 @@
             this.tempTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.tempTextBox.Location = new System.Drawing.Point(35, 194);
             this.tempTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.tempTextBox.MaxLength = 10;
             this.tempTextBox.Name = "tempTextBox";
             this.tempTextBox.Size = new System.Drawing.Size(208, 26);
             this.tempTextBox.TabIndex = 10;
@@ -307,8 +313,9 @@
             this.timeOutput.Location = new System.Drawing.Point(29, 368);
             this.timeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeOutput.Name = "timeOutput";
-            this.timeOutput.Size = new System.Drawing.Size(0, 20);
+            this.timeOutput.Size = new System.Drawing.Size(57, 20);
             this.timeOutput.TabIndex = 12;
+            this.timeOutput.Text = "result";
             this.timeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // timeTextBox
@@ -316,6 +323,7 @@
             this.timeTextBox.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.timeTextBox.Location = new System.Drawing.Point(33, 194);
             this.timeTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.timeTextBox.MaxLength = 10;
             this.timeTextBox.Name = "timeTextBox";
             this.timeTextBox.Size = new System.Drawing.Size(211, 26);
             this.timeTextBox.TabIndex = 11;
