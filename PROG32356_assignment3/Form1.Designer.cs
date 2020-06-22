@@ -86,7 +86,7 @@
             // lengthOutput
             // 
             this.lengthOutput.AutoSize = true;
-            this.lengthOutput.Location = new System.Drawing.Point(77, 368);
+            this.lengthOutput.Location = new System.Drawing.Point(27, 368);
             this.lengthOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lengthOutput.Name = "lengthOutput";
             this.lengthOutput.Size = new System.Drawing.Size(0, 20);
@@ -154,16 +154,16 @@
             this.weightConvertBtn.TabIndex = 14;
             this.weightConvertBtn.Text = "Convert";
             this.weightConvertBtn.UseVisualStyleBackColor = true;
+            this.weightConvertBtn.Click += new System.EventHandler(this.WeightConvertBtn_Click);
             // 
             // weightOutput
             // 
             this.weightOutput.AutoSize = true;
-            this.weightOutput.Location = new System.Drawing.Point(125, 368);
+            this.weightOutput.Location = new System.Drawing.Point(25, 348);
             this.weightOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.weightOutput.Name = "weightOutput";
             this.weightOutput.Size = new System.Drawing.Size(0, 20);
             this.weightOutput.TabIndex = 10;
-            this.weightOutput.Click += new System.EventHandler(this.WeightOutput_Click);
             // 
             // weightTextBox
             // 
@@ -226,17 +226,17 @@
             this.tempConvertBtn.TabIndex = 15;
             this.tempConvertBtn.Text = "Convert";
             this.tempConvertBtn.UseVisualStyleBackColor = true;
+            this.tempConvertBtn.Click += new System.EventHandler(this.TempConvertBtn_Click);
             // 
             // tempOutput
             // 
             this.tempOutput.AutoSize = true;
-            this.tempOutput.Location = new System.Drawing.Point(143, 368);
+            this.tempOutput.Location = new System.Drawing.Point(31, 368);
             this.tempOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tempOutput.Name = "tempOutput";
             this.tempOutput.Size = new System.Drawing.Size(0, 20);
             this.tempOutput.TabIndex = 11;
             this.tempOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tempOutput.Click += new System.EventHandler(this.TempOutput_Click);
             // 
             // tempTextBox
             // 
@@ -299,17 +299,17 @@
             this.timeConvertBtn.TabIndex = 16;
             this.timeConvertBtn.Text = "Convert";
             this.timeConvertBtn.UseVisualStyleBackColor = true;
+            this.timeConvertBtn.Click += new System.EventHandler(this.TimeConvertBtn_Click);
             // 
             // timeOutput
             // 
             this.timeOutput.AutoSize = true;
-            this.timeOutput.Location = new System.Drawing.Point(132, 368);
+            this.timeOutput.Location = new System.Drawing.Point(29, 368);
             this.timeOutput.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.timeOutput.Name = "timeOutput";
             this.timeOutput.Size = new System.Drawing.Size(0, 20);
             this.timeOutput.TabIndex = 12;
             this.timeOutput.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.timeOutput.Click += new System.EventHandler(this.TimeOutput_Click);
             // 
             // timeTextBox
             // 
